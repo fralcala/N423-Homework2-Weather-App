@@ -19,6 +19,7 @@ p {
 
 #app {
   padding: 20px;
+  font-family: sans-serif;
 }
 
 input {
@@ -77,7 +78,7 @@ input {
     justify-content: center;
     align-items: center;
     width: 200px;
-    background-color: rgb(77, 143, 230);
+    background-color: rgb(100, 169, 239);
     margin: 5px;
     padding: 20px 20px 5px 20px;
     border-radius: 5px;
@@ -91,6 +92,16 @@ input {
 
     .temp {
       font-size: 25px;
+      margin: 5px;
+    }
+
+    .text {
+      font-size: 17px;
+    }
+
+    .uv {
+      margin-top: 5px;
+      font-size: 15px;
     }
 
     .date {

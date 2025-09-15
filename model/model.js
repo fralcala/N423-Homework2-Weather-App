@@ -34,7 +34,7 @@ export function getForecast(searchResult) {
   let forecastURL = `https://api.weatherapi.com/v1/forecast.json?key=${apiKey} &q=${searchResult}&days=7&aqi=no&alerts=no
   `;
   $.getJSON(forecastURL, (data) => {
-    console.log(data.forecast);
+    console.log(data.forecast.forecastday.day);
 
     let weatherForecast = ``;
 
@@ -43,12 +43,13 @@ export function getForecast(searchResult) {
     let dayCount = 0;
     for (let i = dayCount; i <= 6; i++) {
       let dayCast = forecastWeth.forecastday[`${i}`];
-      console.log(dayCast.day.condition);
+      console.log(dayCast.day.uv);
       weatherForecast += `
       <div class="forecastDay">
       <img src="${dayCast.day.condition.icon}"/>
       <li class="temp">${dayCast.day.avgtemp_f}&deg</li>
-      <li>${dayCast.day.condition.text}</li>
+      <li class="text">${dayCast.day.condition.text}</li>
+       <li class="uv">UV ${dayCast.day.uv}</li>
       <li class="date">${dayCast.date}</li>
       </div>`;
     }
