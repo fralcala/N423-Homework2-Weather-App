@@ -34,34 +34,45 @@ input {
 }
 
 .currentWeatherHolder {
-  display: flex;
+  /* display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  padding: 10px; */
 
-  h1 {
-    height: 20px;
-  }
+  .weatherContent {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    background-color: rgb(100, 169, 239);
+    color: #fff;
 
-  h2 {
-    height: 15px;
-  }
-
-  .current {
-    text-align: center;
-
-    img {
-      width: 90px;
+    h1 {
+      height: 20px;
     }
 
-    h3 {
-      height: 10px;
-      font-size: 20px;
+    h2 {
+      height: 15px;
     }
 
-    .celsius {
-      border-top: 1px solid black;
-      margin-bottom: 10px;
+    .current {
+      text-align: center;
+
+      img {
+        width: 90px;
+      }
+
+      h3 {
+        height: 10px;
+        font-size: 20px;
+      }
+
+      .celsius {
+        border-top: 1px solid #fff;
+        margin-bottom: 10px;
+      }
     }
   }
 }

@@ -12,15 +12,17 @@ export function getWeatherByLocation(searchResult) {
     let current = data.current;
 
     let weatherContent = `
-      <h1>${location.region}</h1>
-      <h2>${location.name}</h2>
-      <div class="current">
-        <div>
-        <img src="${current.condition.icon}"/>
-        <h3> ${current.temp_f}&deg F</h3></div>
-        <div class="celsius">${current.temp_c}&deg C</div>
-        <div>${current.condition.text}</div>
-        <div>Feels: ${current.feelslike_f}&deg</div>
+      <div class="weatherContent">
+        <h1>${location.region}</h1>
+        <h2>${location.name}</h2>
+        <div class="current">
+          <div>
+          <img src="${current.condition.icon}"/>
+          <h3> ${current.temp_f}&deg F</h3></div>
+          <div class="celsius">${current.temp_c}&deg C</div>
+          <div>${current.condition.text}</div>
+          <div>Feels: ${current.feelslike_f}&deg</div>
+        </div>
       </div>
     `;
 
