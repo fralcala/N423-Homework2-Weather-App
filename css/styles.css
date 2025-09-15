@@ -21,10 +21,33 @@ p {
   padding: 20px;
   font-family: sans-serif;
 }
+.topContainer {
+  background-color: rgb(42, 83, 165);
+
+  button {
+    font-size: 15px;
+    padding: 5px;
+    background-color: #fff;
+  }
+  .topBar {
+    width: 100%;
+    display: flex;
+    /* background-color: rgb(42, 83, 165); */
+    justify-content: space-between;
+    align-items: center;
+    padding: 5px 10px;
+    margin-bottom: 3px;
+
+    h1 {
+      color: white;
+    }
+  }
+}
 
 input {
   padding: 5px;
   font-size: 15px;
+  margin-left: 10px;
 }
 
 .searchBar {
